@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+db_host = "db"
+db_port = 5432
+db_name = "blog"
+db_user = "blog"
+db_pass = "blog"
+
+api_key = "dev"

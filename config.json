@@ -1,0 +1,18 @@
+{
+    "debug": true,
+    "web_host": "localhost",
+    "web_port": 8001,
+    "web_ssl_cert": null,
+    "web_ssl_key": null,
+    "web_ssl_devmode": true,
+    "db_host": "localhost",
+    "db_port": 5432,
+    "db_name": "dev",
+    "db_user": "dev",
+    "db_pass": "dev",
+    "api_key": "dev",
+    "max_sessions": 5,
+    "session_expire_time": 60,
+    "sweeper_interval": 30,
+    "rpc_max": 1024
+}

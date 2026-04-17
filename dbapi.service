@@ -1,0 +1,19 @@
+[Unit]
+Description=Launch Flask Dbapi Server
+Requires=dbapi.socket
+After=network-online.target
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/gunicorn dbserver:aio --bind 127.0.0.1:31313 -w 2 -k aiohttp.GunicornWebWorker
+User=dbapi
+Group=dbapi
+RuntimeDirectory=gunicorn
+WorkingDirectory=/home/dbapi/dbapi
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
