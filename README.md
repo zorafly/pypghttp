@@ -8,7 +8,7 @@ Psycopg3 backend
 
 example usage from `client/test.py` below:
 ```
-sync def main():
+async def main():
     c = apiclient_v4(config.api_server, config.api_key)    
     check("Session establish", await c.establish(), True)
 
