@@ -1,7 +1,9 @@
 PyPgHTTP
 
 SQL transport over JSON/HTTPS
+
 Utilizes async Python
+
 Psycopg3 backend
 
 example usage from `client/test.py` below:
